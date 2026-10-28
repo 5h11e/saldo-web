@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f7f2" />
+    <meta name="description" content="Saldo 个人记账软件功能介绍、隐私协议与用户协议。" />
+    <title>Saldo — 让每一笔收支清晰可见</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Saldo 首页">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="currentColor"/><path d="M20.2 8.6c-6.1.5-10.1 4.7-10.1 10.4 0 6.6 5.1 11.4 11 10.3 6.3-1.1 9.4-7 7.9-12.6-1.2-4.8-4.3-8.5-8.8-8.1Z" fill="#F8FAF5"/><path d="M14.5 18.3c3.8-1.1 7.8 1.1 10.9 5.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="brand-name">saldo</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="主导航">
+          <a href="#features">功能介绍</a>
+          <a href="#privacy">隐私协议</a>
+          <a href="#terms">用户协议</a>
+          <a class="nav-cta" href="#privacy">了解数据如何使用 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> 个人收支管理 · 本机优先</p>
+          <h1 id="hero-title">让每一笔收支<br /><em>清晰可见。</em></h1>
+          <p class="hero-lede">把日常记下来，把时间还给生活。Saldo 帮你轻松记录收支、看懂消费趋势，也让账本始终由你掌握。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#features">认识 Saldo <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#privacy">先看看隐私说明 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-notes"><span><i>01</i> 不登录也能记账</span><span><i>02</i> 云备份由你选择</span></div>
+        </div>
+
+        <div class="hero-visual" aria-label="Saldo 账本界面示意">
+          <div class="visual-halo"></div>
+          <div class="visual-star star-one">✳</div>
+          <div class="visual-star star-two">✦</div>
+          <div class="mock-window">
+            <div class="mock-topbar"><span class="mock-brand"><i class="mini-mark"></i> saldo</span><span class="demo-tag">界面示意</span></div>
+            <div class="mock-date"><span>10 月 28 日 · 星期三</span><span class="date-dot"></span></div>
+            <p class="mock-label">本月支出</p>
+            <div class="mock-amount"><span>¥</span> 3,286<span class="amount-decimal">.40</span></div>
+            <div class="mock-summary"><span>收入 <b>¥ 8,500.00</b></span><span>结余 <b>¥ 5,213.60</b></span></div>
+            <div class="mock-chart" aria-label="一周支出示意图">
+              <div class="chart-guide guide-one"></div><div class="chart-guide guide-two"></div>
+              <div class="chart-bar" style="--bar:43%"><i></i><small>一</small></div>
+              <div class="chart-bar" style="--bar:62%"><i></i><small>二</small></div>
+              <div class="chart-bar" style="--bar:35%"><i></i><small>三</small></div>
+              <div class="chart-bar active" style="--bar:78%"><i></i><small>四</small></div>
+              <div class="chart-bar" style="--bar:51%"><i></i><small>五</small></div>
+              <div class="chart-bar" style="--bar:88%"><i></i><small>六</small></div>
+              <div class="chart-bar" style="--bar:48%"><i></i><small>日</small></div>
+            </div>
+            <div class="mock-ledger-head"><strong>最近记录</strong><a href="#features">查看全部 <span>→</span></a></div>
+            <div class="mock-row"><span class="ledger-icon food">食</span><span class="ledger-name">午餐</span><small>餐饮美食</small><b>− ¥ 36.00</b></div>
+            <div class="mock-row"><span class="ledger-icon ride">行</span><span class="ledger-name">地铁出行</span><small>交通出行</small><b>− ¥ 6.00</b></div>
+            <div class="mock-row"><span class="ledger-icon home">家</span><span class="ledger-name">日用品</span><small>居家生活</small><b>− ¥ 58.90</b></div>
+          </div>
+          <div class="float-note note-offline"><span class="tiny-check">✓</span><span>离线也能记录</span></div>
+          <div class="float-note note-cloud"><span class="cloud-symbol">☁</span><span>云备份可选</span></div>
+        </div>
+        <a class="scroll-cue" href="#features" aria-label="向下浏览功能介绍"><span></span> 向下浏览</a>
+      </section>
+
+      <section class="promise-band" aria-label="Saldo 的设计原则"><div class="promise-inner"><p><span>01</span> 记录很轻松</p><p><span>02</span> 数据去向说清楚</p><p><span>03</span> 选择权在你手里</p></div></section>
+
+      <section class="features section-wrap" id="features" aria-labelledby="features-title">
+        <div class="section-heading"><div><p class="eyebrow">一份账本，陪你看见日常</p><h2 id="features-title">从记下，到看懂。</h2></div><p class="section-intro">每个功能都围绕真实的记账习惯设计：先让记录变简单，再让每月的收支有迹可循。</p></div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-wide feature-ink">
+            <div class="feature-copy"><span class="feature-index">01 / 记录</span><h3>今天的一笔，<br />随手记下来。</h3><p>记录收入、支出、分类、用途和日期。常用分类可以调整，账单也能随时编辑、筛选或删除。</p><span class="feature-pill"><span class="pill-dot"></span> 本机离线可用</span></div>
+            <div class="ledger-art" aria-hidden="true"><div class="art-receipt"><span class="receipt-title">今日账单</span><span class="receipt-line strong"></span><span class="receipt-line"></span><span class="receipt-line short"></span><span class="receipt-divider"></span><span class="receipt-item"><i></i><b></b><em></em></span><span class="receipt-item"><i></i><b></b><em></em></span><span class="receipt-item"><i></i><b></b><em></em></span></div><div class="art-plus">＋</div></div>
+          </article>
+
+          <article class="feature-card feature-card-mint">
+            <span class="feature-index">02 / 概览</span><h3>日月收支，<br />看得明明白白。</h3><p>按日或按月查看收入、支出与结余，配合趋势图、分类占比和预算掌握节奏。</p>
+            <div class="mini-chart" aria-hidden="true"><span style="--h:38%"></span><span style="--h:61%"></span><span style="--h:47%"></span><span style="--h:78%"></span><span style="--h:55%"></span><span style="--h:91%"></span><span style="--h:68%"></span></div>
+          </article>
+
+          <article class="feature-card feature-card-cream">
+            <span class="feature-index">03 / 账单</span><h3>固定支出，<br />记得刚刚好。</h3><p>设置固定账单和提醒，逐笔记录缴费情况。该处理的事项，不再全靠记性。</p>
+            <div class="calendar-art" aria-hidden="true"><div class="calendar-cap"><i></i><i></i></div><div class="calendar-month">每月账单</div><div class="calendar-grid"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b class="marked"></b><b></b><b></b><b></b></div><span class="calendar-check">✓</span></div>
+          </article>
+
+          <article class="feature-card feature-card-lilac">
+            <span class="feature-index">04 / 语音与文字</span><h3>说出来，<br />也能变成一笔账。</h3><p>用语音或文字描述收支，整理成待核对草稿。确认之后，才会写入账本。</p>
+            <div class="voice-art" aria-hidden="true"><span class="voice-bubble">“午餐花了 36 元”</span><div class="voice-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="voice-mic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6.5 11.5a5.5 5.5 0 0 0 11 0M12 17v4m-3 0h6"/></svg></span></div>
+          </article>
+
+          <article class="feature-card feature-card-sky">
+            <span class="feature-index">05 / 消费照片</span><h3>小票拍一拍，<br />信息先帮你理好。</h3><p>识别消费照片中的金额、分类与时间，生成草稿供你检查；AI 识别不一定准确。</p>
+            <div class="receipt-scan" aria-hidden="true"><span class="scan-corner tl"></span><span class="scan-corner tr"></span><span class="scan-corner bl"></span><span class="scan-corner br"></span><div class="scan-paper"><i></i><i></i><i></i><b></b><i></i><i></i></div><span class="scan-spark">✦</span></div>
+          </article>
+
+          <article class="feature-card feature-card-dark">
+            <span class="feature-index">06 / 复盘与备份</span><h3>回看趋势，<br />也留一份安心。</h3><p>主动生成 AI 月度复盘，或登录账号开启云备份。你也可以随时导出 JSON 和 CSV。</p>
+            <div class="cloud-art" aria-hidden="true"><div class="cloud-shape"><span>✓</span></div><i class="cloud-orbit orbit-a"></i><i class="cloud-orbit orbit-b"></i><span class="cloud-dot dot-a"></span><span class="cloud-dot dot-b"></span></div>
+          </article>
+        </div>
+
+        <div class="offline-note"><div class="offline-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.4c0 4.3-2.9 7.5-7 9.1-4.1-1.6-7-4.8-7-9.1V6l7-2.5Z"/><path d="m8.7 11.8 2.2 2.2 4.6-4.8"/></svg></div><div><strong>本机优先，云端可选。</strong><p>日常记账和统计默认在本机完成。登录账号后才会启用云端备份；AI 功能在你主动使用时才会发送相应内容。</p></div><a href="#privacy">查看数据说明 <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="legal-section privacy-section" id="privacy" aria-labelledby="privacy-title">
+        <div class="section-wrap legal-layout">
+          <aside class="legal-aside"><p class="eyebrow">清楚说明，安心使用</p><h2 id="privacy-title">隐私协议</h2><p class="legal-version">版本 1.0<br />更新日期：2026 年 10 月 28 日</p><div class="aside-card"><span class="aside-shield" aria-hidden="true">✳</span><p>我们按照提供功能所需的范围处理信息，并尽量让账本留在你的设备上。</p></div><a class="aside-link" href="#terms">继续阅读用户协议 <span aria-hidden="true">↓</span></a></aside>
+          <div class="legal-content">
+            <div class="legal-intro"><span class="legal-kicker">在你使用前</span><p>Saldo 由 <strong>张信阳</strong>（下称“我们”）提供。我们重视账单和个人信息的保护。本协议说明 Saldo 会处理哪些信息、何时会处理，以及你可以如何管理自己的数据。</p></div>
+            <article class="legal-block"><h3><span>01</span> 我们处理的信息与用途</h3>
+              <div class="legal-item"><h4>账号信息</h4><p>注册或登录时，我们处理你提供的用户名和密码。服务器以不可逆的密码哈希形式保存密码；登录会话令牌保存在 iOS Keychain 中，用于维持账号会话。Saldo 当前不提供密码找回功能，请妥善保管密码。</p></div>
+              <div class="legal-item"><h4>账本信息</h4><p>账单、分类、预算、固定账单及相关设置默认保存在设备本机的 SQLite 数据库中。未登录时，这些数据不会为了云备份而上传。登录账号并选择使用同步后，Saldo 会把账本备份上传到云端，以便恢复和跨设备使用；备份包括分类、账单、预算、固定账单、固定账单记录及语音分类习惯。</p></div>
+              <div class="legal-item"><h4>AI 语音与文字记账</h4><p>语音转文字使用 iOS 系统语音识别能力；是否由设备本地处理取决于设备支持和系统设置。你点按 AI 解析后，应用会将你提交的文字、可用分类、语音分类习惯、当前时间及时区发送给 Saldo 服务，并转交配置的 AI 服务生成记账草稿。AI 结果需要你核对；只有你继续确认并保存后，才会新增账单。</p></div>
+              <div class="legal-item"><h4>AI 图片识别</h4><p>你主动选择照片并开始识别后，照片、可用分类、当前时间及时区会发送至 Saldo 服务和配置的 AI 服务，用于生成记账草稿。根据当前服务实现，照片不会写入 Saldo 的数据库或文件存储。请避免上传与识别无关的材料，尤其是身份证件、银行卡信息等敏感内容。</p></div>
+              <div class="legal-item"><h4>AI 月度复盘</h4><p>你主动生成复盘时，应用会发送所选月及上月的收支汇总、支出分类金额与笔数，以及当月最多三笔较大支出的日期、分类和金额。不会发送完整账单明细或用途描述。复盘结果缓存在本机，不会自动修改账本。</p></div>
+              <div class="legal-item"><h4>设备权限与本地提醒</h4><p>使用语音、拍照或固定账单提醒时，应用会分别请求麦克风与语音识别、相机或通知权限。权限只用于对应功能；固定账单提醒通过 iOS 本地通知安排。你可以在系统设置中随时更改权限。</p></div>
+            </article>
+            <article class="legal-block"><h3><span>02</span> 信息存储与第三方服务</h3><p>账号、云备份由 Saldo API 和云数据库提供支持。语音解析、图片识别和月度复盘会由 Saldo 服务转交给当前配置的 AI 服务处理。AI 服务提供方可能依其自身的隐私政策和服务条款处理请求内容；其名称、处理区域、保存期限及相关链接应以实际部署配置为准，并由运营者在正式发布前补充说明。我们不会在本页面编造该等信息。</p><p>密码以哈希形式保存；云端登录令牌以哈希形式保存。网络传输使用 HTTPS。我们采取访问控制等合理安全措施，但任何网络传输或电子存储方式都不能保证绝对安全。</p></article>
+            <article class="legal-block"><h3><span>03</span> 保存期限、删除与导出</h3><p>本机账本会保留在设备上，直到你在应用中删除相关数据或卸载应用；卸载、换机或设备故障可能导致未备份的数据无法恢复。建议定期使用 JSON 或 CSV 导出功能留存副本。</p><p>云备份会在账号有效期间保存，直到被新备份覆盖或账号注销。你可在“我的 → 账号与云备份”中注销账号；验证密码后，云端账号、登录会话与备份会被删除，本机账本会保留。AI 服务提供方对请求数据的保存期限，请参见其实际适用的政策。</p></article>
+            <article class="legal-block"><h3><span>04</span> 你的权利与联系我们</h3><p>你可以在应用中查询、更改或删除账单，管理本机导入导出、账号同步和注销。对于云端账号和备份的查询、更正或删除申请，也可以通过下方联系方式提出。我们会在核验身份后依法处理。</p><div class="contact-line"><span>隐私联系邮箱</span><strong><a href="mailto:liai_0622@qq.com">liai_0622@qq.com</a></strong></div><div class="contact-line"><span>运营者名称</span><strong>张信阳</strong></div></article>
+            <p class="legal-footnote">重要：正式发布前，请根据实际上线配置补充 AI 服务提供方、数据处理区域及其隐私政策链接，并确认内容与线上服务一致。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="legal-section terms-section" id="terms" aria-labelledby="terms-title">
+        <div class="section-wrap legal-layout">
+          <aside class="legal-aside terms-aside"><p class="eyebrow">一起把规则说在前面</p><h2 id="terms-title">用户协议</h2><p class="legal-version">版本 1.0<br />更新日期：2026 年 10 月 28 日</p><div class="aside-card"><span class="aside-shield" aria-hidden="true">↗</span><p>使用 Saldo 前，请阅读本协议和隐私协议。开始使用即表示你已阅读并理解相关条款。</p></div><a class="aside-link" href="#top">返回页面顶部 <span aria-hidden="true">↑</span></a></aside>
+          <div class="legal-content">
+            <div class="legal-intro"><span class="legal-kicker">服务规则</span><p>本协议由 <strong>张信阳</strong>（下称“我们”）与 Saldo 使用者订立，适用于 Saldo iOS 应用及相关服务。若你不同意本协议或隐私协议，请停止使用相关服务。</p></div>
+            <article class="legal-block"><h3><span>01</span> 服务内容</h3><p>Saldo 提供个人收支记录、分类、预算、统计、固定账单提醒、数据导入导出、可选云备份，以及可选的 AI 语音、图片记账和月度复盘功能。具体功能可能因系统版本、网络、账号状态或服务维护而有所不同。</p></article>
+            <article class="legal-block"><h3><span>02</span> 账号与数据</h3><p>账号功能为可选服务。你应妥善保管账号密码，并对使用该账号进行的操作负责。当前 Saldo 不提供密码找回功能。请确保你有权上传或处理输入 Saldo 的内容，并避免提交他人的隐私信息。</p><p>未登录时，账本保存在本机；登录并启用同步后，账本备份会传至云端。你负责选择适合自己的备份方式，并定期导出重要数据。注销云端账号会删除云端账号及备份，但不会自动删除设备上的本机账本。</p></article>
+            <article class="legal-block"><h3><span>03</span> AI 功能说明</h3><p>AI 生成的金额、日期、分类、趋势分析或建议可能不完整或有误，仅供记录整理和一般信息参考。请在保存前自行核对。Saldo 不提供会计、税务、投资、信贷或其他专业意见，也不根据 AI 输出代替你作出财务决定。</p></article>
+            <article class="legal-block"><h3><span>04</span> 合理使用</h3><p>你不得利用 Saldo 从事违法活动、侵害他人合法权益、上传恶意程序、干扰或破坏服务运行，或未经授权访问服务及相关系统。你不得将 Saldo 用于可能危及他人或公共安全的用途。</p></article>
+            <article class="legal-block"><h3><span>05</span> 服务调整与责任</h3><p>我们会尽力维护服务，但网络、设备、第三方服务或维护安排可能导致服务暂时中断。因系统故障、设备损坏、误操作、账号泄露或未备份等原因造成数据丢失的风险，应结合你选择的本机存储与云备份方式评估；请保留独立的数据副本。</p><p>在法律允许的范围内，我们不对无法合理控制的第三方服务中断或不可抗力造成的影响承担超出法定范围的责任。本协议任何内容均不限制依法不得限制或排除的消费者权利与责任。</p></article>
+            <article class="legal-block"><h3><span>06</span> 协议更新与争议处理</h3><p>服务功能或适用规则发生重大变化时，我们会通过应用内提示或本页面更新等适当方式告知。若你继续使用更新后的服务，即表示你接受更新后的条款；如不同意，应停止使用相关服务。争议处理及适用法律以届时适用的法律规定为准。</p></article>
+            <p class="legal-footnote">如需咨询或反馈，请通过隐私协议中列明的邮箱联系运营者。正式展示前，请确认协议内容与线上服务保持一致。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-inner"><a class="brand footer-brand" href="#top" aria-label="回到页面顶部"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="currentColor"/><path d="M20.2 8.6c-6.1.5-10.1 4.7-10.1 10.4 0 6.6 5.1 11.4 11 10.3 6.3-1.1 9.4-7 7.9-12.6-1.2-4.8-4.3-8.5-8.8-8.1Z" fill="#F8FAF5"/><path d="M14.5 18.3c3.8-1.1 7.8 1.1 10.9 5.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="brand-name">saldo</span></a><p>让每一笔收支清晰可见。<br /><span>本机优先，选择权在你手里。</span></p><div class="footer-links"><a href="#features">功能介绍</a><a href="#privacy">隐私协议</a><a href="#terms">用户协议</a></div><small>© <span id="current-year">2026</span> Saldo · 个人收支管理</small></div></footer>
+    <button class="back-to-top" type="button" aria-label="返回页面顶部">↑</button>
+  </body>
+</html>
