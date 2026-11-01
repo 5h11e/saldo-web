@@ -114,7 +114,7 @@
 
       <section class="legal-section privacy-section" id="privacy" aria-labelledby="privacy-title">
         <div class="section-wrap legal-layout">
-          <aside class="legal-aside"><p class="eyebrow">清楚说明，安心使用</p><h2 id="privacy-title">隐私协议</h2><p class="legal-version">版本 1.0<br />更新日期：2026 年 10 月 28 日</p><div class="aside-card"><span class="aside-shield" aria-hidden="true">✳</span><p>我们按照提供功能所需的范围处理信息，并尽量让账本留在你的设备上。</p></div><a class="aside-link" href="#terms">继续阅读用户协议 <span aria-hidden="true">↓</span></a></aside>
+          <aside class="legal-aside"><p class="eyebrow">清楚说明，安心使用</p><h2 id="privacy-title">隐私协议</h2><p class="legal-version">版本 1.1<br />更新日期：2026 年 11 月 1 日</p><div class="aside-card"><span class="aside-shield" aria-hidden="true">✳</span><p>我们按照提供功能所需的范围处理信息，并尽量让账本留在你的设备上。</p></div><a class="aside-link" href="#terms">继续阅读用户协议 <span aria-hidden="true">↓</span></a></aside>
           <div class="legal-content">
             <div class="legal-intro"><span class="legal-kicker">在你使用前</span><p>Saldo 由 <strong>张信阳</strong>（下称“我们”）提供。我们重视账单和个人信息的保护。本协议说明 Saldo 会处理哪些信息、何时会处理，以及你可以如何管理自己的数据。</p></div>
             <article class="legal-block"><h3><span>01</span> 我们处理的信息与用途</h3>
@@ -123,28 +123,30 @@
               <div class="legal-item"><h4>AI 语音与文字记账</h4><p>语音转文字使用 iOS 系统语音识别能力；是否由设备本地处理取决于设备支持和系统设置。你点按 AI 解析后，应用会将你提交的文字、可用分类、语音分类习惯、当前时间及时区发送给 Saldo 服务，并转交配置的 AI 服务生成记账草稿。AI 结果需要你核对；只有你继续确认并保存后，才会新增账单。</p></div>
               <div class="legal-item"><h4>AI 图片识别</h4><p>你主动选择照片并开始识别后，照片、可用分类、当前时间及时区会发送至 Saldo 服务和配置的 AI 服务，用于生成记账草稿。根据当前服务实现，照片不会写入 Saldo 的数据库或文件存储。请避免上传与识别无关的材料，尤其是身份证件、银行卡信息等敏感内容。</p></div>
               <div class="legal-item"><h4>AI 月度复盘</h4><p>你主动生成复盘时，应用会发送所选月及上月的收支汇总、支出分类金额与笔数，以及当月最多三笔较大支出的日期、分类和金额。不会发送完整账单明细或用途描述。复盘结果缓存在本机，不会自动修改账本。</p></div>
+              <div class="legal-item"><h4>设备与订阅验证信息</h4><p>注册免费体验时，应用会生成随机安装标识并发送给 Saldo 服务，用于将 24 小时体验绑定到该安装并防止重复领取。购买或恢复 Plus 时，Apple 会处理付款；Saldo 服务接收 Apple 签名的交易信息，并保存原始交易编号、交易环境、App Account Token 及其账号绑定，用于验证订阅权益、防止交易被重复绑定。Saldo 不接收或保存你的银行卡信息。</p></div>
               <div class="legal-item"><h4>设备权限与本地提醒</h4><p>使用语音、拍照或固定账单提醒时，应用会分别请求麦克风与语音识别、相机或通知权限。权限只用于对应功能；固定账单提醒通过 iOS 本地通知安排。你可以在系统设置中随时更改权限。</p></div>
             </article>
-            <article class="legal-block"><h3><span>02</span> 信息存储与第三方服务</h3><p>账号、云备份由 Saldo API 和云数据库提供支持。语音解析、图片识别和月度复盘会由 Saldo 服务转交给当前配置的 AI 服务处理。AI 服务提供方可能依其自身的隐私政策和服务条款处理请求内容；其名称、处理区域、保存期限及相关链接应以实际部署配置为准，并由运营者在正式发布前补充说明。我们不会在本页面编造该等信息。</p><p>密码以哈希形式保存；云端登录令牌以哈希形式保存。网络传输使用 HTTPS。我们采取访问控制等合理安全措施，但任何网络传输或电子存储方式都不能保证绝对安全。</p></article>
-            <article class="legal-block"><h3><span>03</span> 保存期限、删除与导出</h3><p>本机账本会保留在设备上，直到你在应用中删除相关数据或卸载应用；卸载、换机或设备故障可能导致未备份的数据无法恢复。建议定期使用 JSON 或 CSV 导出功能留存副本。</p><p>云备份会在账号有效期间保存，直到被新备份覆盖或账号注销。你可在“我的 → 账号与云备份”中注销账号；验证密码后，云端账号、登录会话与备份会被删除，本机账本会保留。AI 服务提供方对请求数据的保存期限，请参见其实际适用的政策。</p></article>
+            <article class="legal-block"><h3><span>02</span> 信息存储与第三方服务</h3><p>账号和用户主动开启的云备份由部署在中国上海的腾讯云 CloudBase 服务及其 PostgreSQL 数据库提供支持；CloudBase 的地域信息见<a href="https://cloud.tencent.com/document/product/876/51107" target="_blank" rel="noopener">腾讯云 CloudBase 地域说明</a>，腾讯云隐私说明见<a href="https://cloud.tencent.com/document/product/301/11470" target="_blank" rel="noopener">腾讯云隐私保护声明</a>。Saldo 的 API 和数据库用于账号会话、云备份及订阅权益验证。</p><p>AI 语音解析、图片识别和月度复盘由 Saldo 服务转交给阿里云百炼（DashScope）处理；当前生产服务使用阿里云北京地域接口。阿里云说明其会依照法律法规存储模型与应用调用产生的数据，且不会将客户数据用于模型训练；详情见<a href="https://help.aliyun.com/zh/model-studio/privacy-notice" target="_blank" rel="noopener">阿里云百炼隐私说明</a>及<a href="https://help.aliyun.com/zh/model-studio/faq-about-alibaba-cloud-model-studio" target="_blank" rel="noopener">常见问题</a>。Saldo 无法设定该服务方的保存期限。</p><p>密码以哈希形式保存；云端登录令牌以哈希形式保存。网络传输使用 HTTPS。我们采取访问控制等合理安全措施，但任何网络传输或电子存储方式都不能保证绝对安全。Apple 负责处理 App Store 订阅付款，相关信息按 Apple 的隐私政策处理。</p></article>
+            <article class="legal-block"><h3><span>03</span> 保存期限、删除与导出</h3><p>本机账本会保留在设备上，直到你在应用中删除相关数据或卸载应用；卸载、换机或设备故障可能导致未备份的数据无法恢复。建议定期使用 JSON 或 CSV 导出功能留存副本。</p><p>云备份会在账号有效期间保存，直到被新备份覆盖或账号注销。你可在“我的 → 账号与云备份”中注销账号；验证密码后，云端账号、登录会话与备份会被删除，本机账本会保留。为防止重复领取体验及防止已验证的订阅交易被重新绑定，注销后我们仍会保留随机安装标识，以及 Apple 原始交易编号、交易环境和 App Account Token 等去关联账号的验证记录；这些记录没有自动到期时间，仅用于上述防滥用与权益验证。AI 服务方对请求数据的保存依其政策及适用法律执行。</p></article>
             <article class="legal-block"><h3><span>04</span> 你的权利与联系我们</h3><p>你可以在应用中查询、更改或删除账单，管理本机导入导出、账号同步和注销。对于云端账号和备份的查询、更正或删除申请，也可以通过下方联系方式提出。我们会在核验身份后依法处理。</p><div class="contact-line"><span>隐私联系邮箱</span><strong><a href="mailto:liai_0622@qq.com">liai_0622@qq.com</a></strong></div><div class="contact-line"><span>运营者名称</span><strong>张信阳</strong></div></article>
-            <p class="legal-footnote">重要：正式发布前，请根据实际上线配置补充 AI 服务提供方、数据处理区域及其隐私政策链接，并确认内容与线上服务一致。</p>
+            <p class="legal-footnote">你可以通过下方邮箱提出隐私相关请求。我们会核验身份并依法处理；依法或为维护订阅验证、防止重复试用所需保留的记录，不会随账号注销一并删除。</p>
           </div>
         </div>
       </section>
 
       <section class="legal-section terms-section" id="terms" aria-labelledby="terms-title">
         <div class="section-wrap legal-layout">
-          <aside class="legal-aside terms-aside"><p class="eyebrow">一起把规则说在前面</p><h2 id="terms-title">用户协议</h2><p class="legal-version">版本 1.0<br />更新日期：2026 年 10 月 28 日</p><div class="aside-card"><span class="aside-shield" aria-hidden="true">↗</span><p>使用 Saldo 前，请阅读本协议和隐私协议。开始使用即表示你已阅读并理解相关条款。</p></div><a class="aside-link" href="#top">返回页面顶部 <span aria-hidden="true">↑</span></a></aside>
+          <aside class="legal-aside terms-aside"><p class="eyebrow">一起把规则说在前面</p><h2 id="terms-title">用户协议</h2><p class="legal-version">版本 1.1<br />更新日期：2026 年 11 月 1 日</p><div class="aside-card"><span class="aside-shield" aria-hidden="true">↗</span><p>使用 Saldo 前，请阅读本协议和隐私协议。开始使用即表示你已阅读并理解相关条款。</p></div><a class="aside-link" href="#top">返回页面顶部 <span aria-hidden="true">↑</span></a></aside>
           <div class="legal-content">
             <div class="legal-intro"><span class="legal-kicker">服务规则</span><p>本协议由 <strong>张信阳</strong>（下称“我们”）与 Saldo 使用者订立，适用于 Saldo iOS 应用及相关服务。若你不同意本协议或隐私协议，请停止使用相关服务。</p></div>
             <article class="legal-block"><h3><span>01</span> 服务内容</h3><p>Saldo 提供个人收支记录、分类、预算、统计、固定账单提醒、数据导入导出、可选云备份，以及可选的 AI 语音、图片记账和月度复盘功能。具体功能可能因系统版本、网络、账号状态或服务维护而有所不同。</p></article>
             <article class="legal-block"><h3><span>02</span> 账号与数据</h3><p>账号功能为可选服务。你应妥善保管账号密码，并对使用该账号进行的操作负责。当前 Saldo 不提供密码找回功能。请确保你有权上传或处理输入 Saldo 的内容，并避免提交他人的隐私信息。</p><p>未登录时，账本保存在本机；登录并启用同步后，账本备份会传至云端。你负责选择适合自己的备份方式，并定期导出重要数据。注销云端账号会删除云端账号及备份，但不会自动删除设备上的本机账本。</p></article>
-            <article class="legal-block"><h3><span>03</span> AI 功能说明</h3><p>AI 生成的金额、日期、分类、趋势分析或建议可能不完整或有误，仅供记录整理和一般信息参考。请在保存前自行核对。Saldo 不提供会计、税务、投资、信贷或其他专业意见，也不根据 AI 输出代替你作出财务决定。</p></article>
-            <article class="legal-block"><h3><span>04</span> 合理使用</h3><p>你不得利用 Saldo 从事违法活动、侵害他人合法权益、上传恶意程序、干扰或破坏服务运行，或未经授权访问服务及相关系统。你不得将 Saldo 用于可能危及他人或公共安全的用途。</p></article>
-            <article class="legal-block"><h3><span>05</span> 服务调整与责任</h3><p>我们会尽力维护服务，但网络、设备、第三方服务或维护安排可能导致服务暂时中断。因系统故障、设备损坏、误操作、账号泄露或未备份等原因造成数据丢失的风险，应结合你选择的本机存储与云备份方式评估；请保留独立的数据副本。</p><p>在法律允许的范围内，我们不对无法合理控制的第三方服务中断或不可抗力造成的影响承担超出法定范围的责任。本协议任何内容均不限制依法不得限制或排除的消费者权利与责任。</p></article>
-            <article class="legal-block"><h3><span>06</span> 协议更新与争议处理</h3><p>服务功能或适用规则发生重大变化时，我们会通过应用内提示或本页面更新等适当方式告知。若你继续使用更新后的服务，即表示你接受更新后的条款；如不同意，应停止使用相关服务。争议处理及适用法律以届时适用的法律规定为准。</p></article>
-            <p class="legal-footnote">如需咨询或反馈，请通过隐私协议中列明的邮箱联系运营者。正式展示前，请确认协议内容与线上服务保持一致。</p>
+            <article class="legal-block"><h3><span>03</span> Saldo Plus 订阅</h3><p>Saldo 提供月度和年度自动续期订阅，订阅价格、周期、试用或促销条件以 App Store 购买确认页面为准。确认购买后，费用将由 Apple 账号收取；订阅会自动续期，除非你在当前订阅周期结束前至少 24 小时关闭自动续期。你可以在 Apple 账号的订阅设置中管理或取消订阅，取消后当前已付费周期内的权益仍按 Apple 的规则有效。注册账号提供的一天 Plus 体验是独立的免费体验，不会自动转为付费订阅。购买、恢复购买和退款由 Apple 按其适用规则处理。</p><p>Plus 解锁 AI 语音解析、照片记账、月度复盘和云备份；本机基础记账、统计、预算、提醒及数据导入导出仍可免费使用。</p></article>
+            <article class="legal-block"><h3><span>04</span> AI 功能说明</h3><p>AI 生成的金额、日期、分类、趋势分析或建议可能不完整或有误，仅供记录整理和一般信息参考。请在保存前自行核对。Saldo 不提供会计、税务、投资、信贷或其他专业意见，也不根据 AI 输出代替你作出财务决定。</p></article>
+            <article class="legal-block"><h3><span>05</span> 合理使用</h3><p>你不得利用 Saldo 从事违法活动、侵害他人合法权益、上传恶意程序、干扰或破坏服务运行，或未经授权访问服务及相关系统。你不得将 Saldo 用于可能危及他人或公共安全的用途。</p></article>
+            <article class="legal-block"><h3><span>06</span> 服务调整与责任</h3><p>我们会尽力维护服务，但网络、设备、第三方服务或维护安排可能导致服务暂时中断。因系统故障、设备损坏、误操作、账号泄露或未备份等原因造成数据丢失的风险，应结合你选择的本机存储与云备份方式评估；请保留独立的数据副本。</p><p>在法律允许的范围内，我们不对无法合理控制的第三方服务中断或不可抗力造成的影响承担超出法定范围的责任。本协议任何内容均不限制依法不得限制或排除的消费者权利与责任。</p></article>
+            <article class="legal-block"><h3><span>07</span> 协议更新与争议处理</h3><p>服务功能或适用规则发生重大变化时，我们会通过应用内提示或本页面更新等适当方式告知。若你继续使用更新后的服务，即表示你接受更新后的条款；如不同意，应停止使用相关服务。争议处理及适用法律以届时适用的法律规定为准。</p></article>
+            <p class="legal-footnote">如需咨询或反馈，请通过隐私协议中列明的邮箱联系运营者。</p>
           </div>
         </div>
       </section>
